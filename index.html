@@ -21,15 +21,16 @@
 <!-- Main Bootstrap Search -->
 <div class="container">
 <!-- Jumbotron for Title -->
-    <div class="jumbotron" style="background-color:lightsalmon ; color: white;">
+    <div class="jumbotron" id="jumbo1" style="background-color:lightsalmon ; color: white;">
             <h1 class="text-center">
-            <strong><i class="fa fa-newspaper-o"></i> Maya Train</strong>
+            <strong><i class="fa fa-newspaper-o"></i> Mayan Train</strong>
             </h1>
-            <h3 class="text-center">The unthinkable project</h3>
+            <h3 class="text-center">The Unthinkable Project!</h3>
     </div>
 
     <div class="row">
             <div class="col-sm-12">
+                
                     <table class="table table-striped table-bordered table-hover">
                             <thead>
                               <tr>
@@ -40,45 +41,71 @@
                                 <th scope="col">Minutes Away</th>
                               </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="trainData">
                               <tr>
-                                <th scope="row">Maple Leaf</th>
+                                <th>Maple Leaf</th>
                                 <td>St Catharines</td>
                                 <td>10</td>
                                 <td id="nextArrival">05:35pm</td>
                                 <td id="minutesAway">10</td>
                               </tr>
                               <tr>
-                                <th scope="row">Adirondack</th>
+                                <th>Adirondack</th>
                                 <td>St Martin</td>
                                 <td>3</td>
                                 <td id="nextArrival2">02:35pm</td>
                                 <td id="minutesAway2">5</td>
                               </tr>
                               <tr>
-                                <th scope="row">Cardinal</th>
+                                <th>Cardinal</th>
                                 <td>Kingston St</td>
                                 <td>15</td>
-                                <td>05:35pm</td>
+                                <td id="nextArrival3">05:35pm</td>
                                 <td id="minutesAway3">10</td>
                               </tr>
                               <tr>
-                                <th scope="row">Vermonter</th>
+                                <th>Vermonter</th>
                                 <td>Beach Mitre</td>
-                                <td>25</td>
-                                <td>05:35pm</td>
-                                <td>10  </td>
+                                <td>5</td>
+                                <td id="nextArrival4">05:35pm</td>
+                                <td id="minutesAway4">10</td>
                               </tr>
                               <tr>
-                                <th scope="row">Capitol</th>
+                                <th>Capitol</th>
                                 <td>Canton St</td>
                                 <td>25</td>
-                                <td>05:35pm</td>
-                                <td>10  </td>
+                                <td id="nextArrival5">05:35pm</td>
+                                <td id="minutesAway5">10</td>
                               </tr>
                             </tbody>
                     </table>
+                    <br>
 
+                    <div class="jumbotron" >
+                        
+                        <form>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput">Train Name</label>
+                              <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+                            </div>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput2">Destination</label>
+                              <input type="text" class="form-control" id="destination" placeholder="Destination">
+                            </div> 
+                          
+                            <div class="form-group">
+                                <label for="formGroupExampleInput3">First Train Time (hh:mm military time)</label>
+                                <input type="time" class="form-control" id="firstTrain" placeholder="First Train Time">
+                              </div> 
+
+                              <div class="form-group">
+                                  <label for="formGroupExampleInput4">Frequency</label>
+                                  <input type="number" class="form-control" id="myFrequency" placeholder="Frequency">
+                                </div>   
+                                <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                          </form>
+                    
+                    </div>
             </div>
     </div>
 </div>

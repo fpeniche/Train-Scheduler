@@ -1,9 +1,24 @@
-.jumbotron{
+#jumbo1{
     height: 210px;
+    margin-top: 10px;
 }
 
 .table{
     width: 100%;
     border: 2px, solid, black;
     border-radius: 2px;
+}
+
+#title{
+    width: 100%;
+    padding-left: 3px;
+    border-style: solid;
+    border-color: black;
+    mask-border-width: 1px;
+    border-radius: 5px;
+    
+}
+
+#submitButton{
+    margin-bottom: 10px;
 }
